@@ -59,9 +59,10 @@
             var portrait = window.innerHeight >= window.innerWidth;
             var full = portrait ? Math.max(screen.height, screen.width) : Math.min(screen.height, screen.width);
             var diff = full - window.innerHeight;
-            root.style.setProperty('--gap', standalone && diff > 0 && diff <= 100 ? diff + 'px' : '0px');
+            // Neuinstallationen melden die Höhe korrekt: keine Korrektur mehr (sonst ragt die Tab-Leiste unten heraus)
+            root.style.setProperty('--gap', '0px');
             // Im Home-Bildschirm immer die volle Bildschirmhöhe nutzen, egal welche Höhe iOS gerade meldet
-            root.style.setProperty('--app-h', standalone && diff > 0 && diff <= 100 ? full + 'px' : 'auto');
+            root.style.setProperty('--app-h', 'auto');
           } catch (e) {}
         }
         set();
