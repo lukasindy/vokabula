@@ -142,7 +142,7 @@ function Root({ route, bg, children }: { route: Route; bg: string; children: Rea
       top: 0,
       left: 0,
       right: 0,
-      height: 'var(--app-h, 100%)',
+      bottom: 0,
       backgroundColor: bg,
       paddingTop: 'env(safe-area-inset-top)',
       paddingLeft: 'env(safe-area-inset-left)',
