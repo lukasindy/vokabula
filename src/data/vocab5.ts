@@ -1,4 +1,4 @@
-// Gesamter Wortschatz, nach offiziellen Niveaulisten sortiert: Oxford 3000/5000 (CEFR A1-C1) und Goethe-Institut Wortlisten A1-B1; Wörter ohne Eintrag stehen nach der Reihenfolge ihres Blocks. Früher = leichter.
+// Gesamter Wortschatz, nach Schwierigkeit sortiert. Früher = leichter.
 export const VOCAB5 = `
 I|ich|yo|je|io
 you|du|tú|tu|tu
